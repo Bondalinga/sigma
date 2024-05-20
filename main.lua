@@ -76,7 +76,7 @@ local function perfectShot(frame)
     perfectShotButton.AnchorPoint = Vector2.new(1, 1)
     perfectShotButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
     perfectShotButton.TextColor3 = Color3.new(1, 1, 1)
-    perfectShotButton.Text = "Always Green: Q"
+    perfectShotButton.Text = "Mostly Green: Q"
     perfectShotButton.TextScaled = true
     perfectShotButton.Parent = frame
 
@@ -95,34 +95,24 @@ local function perfectShot(frame)
     return perfectShotButton
 end
 
--- Section: Dragging Logic
-local function setupDragging(frame)
-    local isDragging = false
-    local offset = Vector2.new(0, 0)
+local function spinBot(frame)
+    local spinBotButton = Instance.new("Text Button")
+    spinBotButton.Size = UDim2.new(0, 150, 0, 50)
+    spinBotButton.Position = UDim2.new(1, -425, 1, -115)
+    spinBotButton.AnchorPoint = Vector2.new(1, 1)
+    spinBotButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
+    spinBotButton.TextColor3 = Color3.new(1, 1, 1)
+    spinBotButton.Text = "Spin Bot"
+    spinBotButton.TextScaled = true
+    spinBotButton.Parent = frame
 
-    local function onMouseDown(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            isDragging = true
-            offset = Vector2.new(input.Position.X - frame.AbsolutePosition.X, input.Position.Y - frame.AbsolutePosition.Y)
-        end
-    end
+    local frameCorner = Instance.new("UICorner")
+    frameCorner.Parent = spinBotButton
+    frameCorner.CornerRadius = UDim.new(0.15, 0)
 
-    local function onMouseMove(input)
-        if isDragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-            local newPosition = input.Position - offset
-            frame.Position = UDim2.new(0, newPosition.X, 0, newPosition.Y)
-        end
-    end
-
-    local function onMouseUp(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            isDragging = false
-        end
-    end
-
-    frame.InputBegan:Connect(onMouseDown)
-    frame.InputChanged:Connect(onMouseMove)
-    frame.InputEnded:Connect(onMouseUp)
+    spinBotButton.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Bondalinga/sigma/main/spin.lua'))()
+    end)
 end
 
 -- Section: GUI Management
@@ -154,6 +144,7 @@ local function main()
 
     initializeHighlightButton(frame)
     perfectShot(frame)
+    spinBot(frame)
 end
 
 -- Execute the main function
