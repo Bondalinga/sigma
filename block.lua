@@ -81,7 +81,6 @@ local function followLoop()
         if followingPlayer then
             moveToInFrontOf(followingPlayer)
         end
-        wait(0.1)
     end
 end
 
