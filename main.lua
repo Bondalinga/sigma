@@ -1,172 +1,372 @@
--- Section: Initialization
-local function initializeFrame()
-    print("Initializing frame...")
-    local frame = Instance.new("Frame")
-    frame.Size = UDim2.new(0, 600, 0, 350)
-    frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-    frame.AnchorPoint = Vector2.new(0.5, 0.5)
-    frame.BackgroundColor3 = Color3.new(0.3, 0.31, 0.3)
-    frame.BorderSizePixel = 3
-    frame.Active = true
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
 
-    local frameCorner = Instance.new("UICorner")
-    frameCorner.Parent = frame
-    frameCorner.CornerRadius = UDim.new(0.15, 0)
+-- Instances:
 
-    -- Add Title
-    local titleLabel = Instance.new("TextLabel")
-    titleLabel.Size = UDim2.new(1, 0, 0, 50)
-    titleLabel.Position = UDim2.new(0, 0, 0, 0)
-    titleLabel.Text = "Basket Ball Legends"
-    titleLabel.TextColor3 = Color3.new(15,15,15)
-    titleLabel.TextScaled = true
-    titleLabel.Parent = frame
+local Converted = {
+	["_main"] = Instance.new("ScreenGui");
+	["_open"] = Instance.new("Frame");
+	["_TextButton"] = Instance.new("TextButton");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_UICorner"] = Instance.new("UICorner");
+	["_guis"] = Instance.new("ScreenGui");
+	["_basketballlegends"] = Instance.new("ScreenGui");
+	["_MainFrame"] = Instance.new("Frame");
+	["_Tittle"] = Instance.new("TextLabel");
+	["_Close"] = Instance.new("TextButton");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_AlwaysGreen"] = Instance.new("TextButton");
+	["_LocalScript2"] = Instance.new("LocalScript");
+	["_SpinBot"] = Instance.new("TextButton");
+	["_LocalScript3"] = Instance.new("LocalScript");
+	["_AutoBlock"] = Instance.new("TextButton");
+	["_LocalScript4"] = Instance.new("LocalScript");
+	["_MainFrame1"] = Instance.new("Frame");
+	["_Tittle1"] = Instance.new("TextLabel");
+	["_Close1"] = Instance.new("TextButton");
+	["_LocalScript5"] = Instance.new("LocalScript");
+	["_Games"] = Instance.new("ScrollingFrame");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_Basket Ball Legends"] = Instance.new("TextButton");
+	["_LocalScript6"] = Instance.new("LocalScript");
+	["_UICorner1"] = Instance.new("UICorner");
+}
 
-    local frameCorner = Instance.new("UICorner")
-    frameCorner.Parent = titleLabel
-    frameCorner.CornerRadius = UDim.new(0.25, 0)
+-- Properties:
 
-    print("Frame initialized.")
-    return frame
-end
+Converted["_main"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_main"].Name = "main"
+Converted["_main"].Parent = game:GetService("CoreGui")
 
-local function initializeToggleButton(screenGui)
-    print("Initializing toggle button...")
-    -- Create and configure the toggle button
-    local toggleButton = Instance.new("TextButton")
-    toggleButton.Size = UDim2.new(0, 100, 0, 25)
-    toggleButton.Position = UDim2.new(0, 0, 0, 0)
-    toggleButton.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
-    toggleButton.TextColor3 = Color3.new(1, 1, 1)
-    toggleButton.Text = "Toggle"
-    toggleButton.TextScaled = true
-    toggleButton.Parent = screenGui
+Converted["_open"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_open"].BackgroundTransparency = 1
+Converted["_open"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_open"].BorderSizePixel = 0
+Converted["_open"].Position = UDim2.new(0, 0, 0.0262390673, 0)
+Converted["_open"].Size = UDim2.new(0, 40, 0, 40)
+Converted["_open"].Name = "open"
+Converted["_open"].Parent = Converted["_main"]
 
-    print("Toggle button initialized.")
-    return toggleButton
-end
+Converted["_TextButton"].Font = Enum.Font.FredokaOne
+Converted["_TextButton"].Text = "O"
+Converted["_TextButton"].TextColor3 = Color3.fromRGB(84.00000259280205, 84.00000259280205, 84.00000259280205)
+Converted["_TextButton"].TextScaled = true
+Converted["_TextButton"].TextSize = 14
+Converted["_TextButton"].TextStrokeTransparency = 0
+Converted["_TextButton"].TextWrapped = true
+Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(103.000009059906, 103.000009059906, 103.000009059906)
+Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].BorderSizePixel = 0
+Converted["_TextButton"].Position = UDim2.new(0.224999994, 0, 0.300000012, 0)
+Converted["_TextButton"].Size = UDim2.new(0, 40, 0, 40)
+Converted["_TextButton"].Parent = Converted["_open"]
 
-local function initializeHighlightButton(frame)
-    print("Initializing highlight button...")
-    -- Create and configure the highlight button
-    local highlightButton = Instance.new("TextButton")
-    highlightButton.Size = UDim2.new(0, 150, 0, 50)
-    highlightButton.Position = UDim2.new(1, -425, 1, -235)
-    highlightButton.AnchorPoint = Vector2.new(1, 1)
-    highlightButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
-    highlightButton.TextColor3 = Color3.new(1, 1, 1)
-    highlightButton.Text = "Esp: B"
-    highlightButton.TextScaled = true
-    highlightButton.Parent = frame
+Converted["_UICorner"].CornerRadius = UDim.new(0.100000001, 0)
+Converted["_UICorner"].Parent = Converted["_TextButton"]
 
-    local frameCorner = Instance.new("UICorner")
-    frameCorner.Parent = highlightButton
-    frameCorner.CornerRadius = UDim.new(0.15, 0)
+Converted["_guis"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_guis"].Name = "guis"
+Converted["_guis"].Parent = Converted["_main"]
 
-    local clicked = false
-    highlightButton.MouseButton1Click:Connect(function()
-        print("Highlight button clicked.")
-        if not clicked then
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/Bondalinga/sigma/main/sigma.lua'))()
-            clicked = true
+Converted["_basketballlegends"].Enabled = false
+Converted["_basketballlegends"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_basketballlegends"].Name = "basketballlegends"
+Converted["_basketballlegends"].Parent = Converted["_guis"]
+
+Converted["_MainFrame"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MainFrame"].BackgroundColor3 = Color3.fromRGB(86.00000247359276, 86.00000247359276, 86.00000247359276)
+Converted["_MainFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainFrame"].BorderSizePixel = 0
+Converted["_MainFrame"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_MainFrame"].Size = UDim2.new(0, 633, 0, 338)
+Converted["_MainFrame"].Name = "MainFrame"
+Converted["_MainFrame"].Parent = Converted["_basketballlegends"]
+
+Converted["_Tittle"].Font = Enum.Font.FredokaOne
+Converted["_Tittle"].Text = "Bondos Hub"
+Converted["_Tittle"].TextColor3 = Color3.fromRGB(58.00000034272671, 58.00000034272671, 58.00000034272671)
+Converted["_Tittle"].TextScaled = true
+Converted["_Tittle"].TextSize = 14
+Converted["_Tittle"].TextStrokeTransparency = 0
+Converted["_Tittle"].TextWrapped = true
+Converted["_Tittle"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Tittle"].BackgroundTransparency = 1
+Converted["_Tittle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Tittle"].BorderSizePixel = 0
+Converted["_Tittle"].Size = UDim2.new(0, 633, 0, 36)
+Converted["_Tittle"].Name = "Tittle"
+Converted["_Tittle"].Parent = Converted["_MainFrame"]
+
+Converted["_Close"].Font = Enum.Font.FredokaOne
+Converted["_Close"].Text = "X"
+Converted["_Close"].TextColor3 = Color3.fromRGB(58.00000034272671, 58.00000034272671, 58.00000034272671)
+Converted["_Close"].TextScaled = true
+Converted["_Close"].TextSize = 14
+Converted["_Close"].TextStrokeTransparency = 0
+Converted["_Close"].TextWrapped = true
+Converted["_Close"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close"].BackgroundTransparency = 1
+Converted["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close"].BorderSizePixel = 0
+Converted["_Close"].Position = UDim2.new(0.957345963, 0, 0.0798816532, 0)
+Converted["_Close"].Size = UDim2.new(0, 40, 0, 40)
+Converted["_Close"].Name = "Close"
+Converted["_Close"].Parent = Converted["_MainFrame"]
+
+Converted["_AlwaysGreen"].Font = Enum.Font.FredokaOne
+Converted["_AlwaysGreen"].Text = "Always Green: Q"
+Converted["_AlwaysGreen"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_AlwaysGreen"].TextScaled = true
+Converted["_AlwaysGreen"].TextSize = 14
+Converted["_AlwaysGreen"].TextStrokeTransparency = 0
+Converted["_AlwaysGreen"].TextWrapped = true
+Converted["_AlwaysGreen"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_AlwaysGreen"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AlwaysGreen"].BorderSizePixel = 0
+Converted["_AlwaysGreen"].Position = UDim2.new(0.0126382308, 0, 0.139053255, 0)
+Converted["_AlwaysGreen"].Size = UDim2.new(0, 200, 0, 50)
+Converted["_AlwaysGreen"].Name = "AlwaysGreen"
+Converted["_AlwaysGreen"].Parent = Converted["_MainFrame"]
+
+Converted["_SpinBot"].Font = Enum.Font.FredokaOne
+Converted["_SpinBot"].Text = "Spin Bot"
+Converted["_SpinBot"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_SpinBot"].TextScaled = true
+Converted["_SpinBot"].TextSize = 14
+Converted["_SpinBot"].TextStrokeTransparency = 0
+Converted["_SpinBot"].TextWrapped = true
+Converted["_SpinBot"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_SpinBot"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SpinBot"].BorderSizePixel = 0
+Converted["_SpinBot"].Position = UDim2.new(0.671406031, 0, 0.139053255, 0)
+Converted["_SpinBot"].Size = UDim2.new(0, 201, 0, 50)
+Converted["_SpinBot"].Name = "SpinBot"
+Converted["_SpinBot"].Parent = Converted["_MainFrame"]
+
+Converted["_AutoBlock"].Font = Enum.Font.FredokaOne
+Converted["_AutoBlock"].Text = "Auto Block"
+Converted["_AutoBlock"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_AutoBlock"].TextScaled = true
+Converted["_AutoBlock"].TextSize = 14
+Converted["_AutoBlock"].TextStrokeTransparency = 0
+Converted["_AutoBlock"].TextWrapped = true
+Converted["_AutoBlock"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_AutoBlock"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_AutoBlock"].BorderSizePixel = 0
+Converted["_AutoBlock"].Position = UDim2.new(0.34123224, 0, 0.139053255, 0)
+Converted["_AutoBlock"].Size = UDim2.new(0, 200, 0, 50)
+Converted["_AutoBlock"].Name = "AutoBlock"
+Converted["_AutoBlock"].Parent = Converted["_MainFrame"]
+
+Converted["_MainFrame1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MainFrame1"].BackgroundColor3 = Color3.fromRGB(86.00000247359276, 86.00000247359276, 86.00000247359276)
+Converted["_MainFrame1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainFrame1"].BorderSizePixel = 0
+Converted["_MainFrame1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_MainFrame1"].Size = UDim2.new(0, 633, 0, 338)
+Converted["_MainFrame1"].Name = "MainFrame"
+Converted["_MainFrame1"].Parent = Converted["_guis"]
+
+Converted["_Tittle1"].Font = Enum.Font.FredokaOne
+Converted["_Tittle1"].Text = "Bondos Hub"
+Converted["_Tittle1"].TextColor3 = Color3.fromRGB(58.00000034272671, 58.00000034272671, 58.00000034272671)
+Converted["_Tittle1"].TextScaled = true
+Converted["_Tittle1"].TextSize = 14
+Converted["_Tittle1"].TextStrokeTransparency = 0
+Converted["_Tittle1"].TextWrapped = true
+Converted["_Tittle1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Tittle1"].BackgroundTransparency = 1
+Converted["_Tittle1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Tittle1"].BorderSizePixel = 0
+Converted["_Tittle1"].Size = UDim2.new(0, 633, 0, 36)
+Converted["_Tittle1"].Name = "Tittle"
+Converted["_Tittle1"].Parent = Converted["_MainFrame1"]
+
+Converted["_Close1"].Font = Enum.Font.FredokaOne
+Converted["_Close1"].Text = "X"
+Converted["_Close1"].TextColor3 = Color3.fromRGB(58.00000034272671, 58.00000034272671, 58.00000034272671)
+Converted["_Close1"].TextScaled = true
+Converted["_Close1"].TextSize = 14
+Converted["_Close1"].TextStrokeTransparency = 0
+Converted["_Close1"].TextWrapped = true
+Converted["_Close1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close1"].BackgroundTransparency = 1
+Converted["_Close1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close1"].BorderSizePixel = 0
+Converted["_Close1"].Position = UDim2.new(0.957345963, 0, 0.0798816532, 0)
+Converted["_Close1"].Size = UDim2.new(0, 40, 0, 40)
+Converted["_Close1"].Name = "Close"
+Converted["_Close1"].Parent = Converted["_MainFrame1"]
+
+Converted["_Games"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Games"].Active = true
+Converted["_Games"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Games"].BackgroundTransparency = 1
+Converted["_Games"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Games"].BorderSizePixel = 0
+Converted["_Games"].Position = UDim2.new(0.0205371249, 0, 0.139053255, 0)
+Converted["_Games"].Size = UDim2.new(0, 620, 0, 291)
+Converted["_Games"].Name = "Games"
+Converted["_Games"].Parent = Converted["_MainFrame1"]
+
+Converted["_UIListLayout"].Padding = UDim.new(0, 10)
+Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout"].Parent = Converted["_Games"]
+
+Converted["_Basket Ball Legends"].Font = Enum.Font.FredokaOne
+Converted["_Basket Ball Legends"].Text = "Basket Ball Legends"
+Converted["_Basket Ball Legends"].TextColor3 = Color3.fromRGB(58.00000034272671, 58.00000034272671, 58.00000034272671)
+Converted["_Basket Ball Legends"].TextDirection = Enum.TextDirection.RightToLeft
+Converted["_Basket Ball Legends"].TextSize = 40
+Converted["_Basket Ball Legends"].TextStrokeTransparency = 0
+Converted["_Basket Ball Legends"].TextWrapped = true
+Converted["_Basket Ball Legends"].BackgroundColor3 = Color3.fromRGB(111.00000858306885, 111.00000858306885, 111.00000858306885)
+Converted["_Basket Ball Legends"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Basket Ball Legends"].BorderSizePixel = 2
+Converted["_Basket Ball Legends"].Position = UDim2.new(0.0274193548, 0, 0, 0)
+Converted["_Basket Ball Legends"].SelectionOrder = 2
+Converted["_Basket Ball Legends"].Size = UDim2.new(0, 600, 0, 50)
+Converted["_Basket Ball Legends"].Name = "Basket Ball Legends"
+Converted["_Basket Ball Legends"].Parent = Converted["_Games"]
+
+Converted["_UICorner1"].CornerRadius = UDim.new(0.200000003, 0)
+Converted["_UICorner1"].Parent = Converted["_Basket Ball Legends"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function ZLPI_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_TextButton"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
         end
-    end)
-
-    print("Highlight button initialized.")
-    return highlightButton
-end
-
-local function perfectShot(frame)
-    print("Initializing perfect shot button...")
-    local perfectShotButton = Instance.new("TextButton")
-    perfectShotButton.Size = UDim2.new(0, 150, 0, 50)
-    perfectShotButton.Position = UDim2.new(1, -425, 1, -175)
-    perfectShotButton.AnchorPoint = Vector2.new(1, 1)
-    perfectShotButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
-    perfectShotButton.TextColor3 = Color3.new(1, 1, 1)
-    perfectShotButton.Text = "Mostly Green: Q"
-    perfectShotButton.TextScaled = true
-    perfectShotButton.Parent = frame
-
-    local frameCorner = Instance.new("UICorner")
-    frameCorner.Parent = perfectShotButton
-    frameCorner.CornerRadius = UDim.new(0.15, 0)
-
-    local clicked = false
-    perfectShotButton.MouseButton1Click:Connect(function()
-        print("Perfect shot button clicked.")
-        if not clicked then
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/Bondalinga/sigma/main/sigma2.lua'))()
-            clicked = true
-        end
-    end)
-
-    print("Perfect shot button initialized.")
-    return perfectShotButton
-end
-
-local function spinBot(frame)
-    print("Initializing spin bot button...")
-    local spinBotButton = Instance.new("TextButton")
-    spinBotButton.Size = UDim2.new(0, 150, 0, 50)
-    spinBotButton.Position = UDim2.new(1, -425, 1, -115)
-    spinBotButton.AnchorPoint = Vector2.new(1, 1)
-    spinBotButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5)
-    spinBotButton.TextColor3 = Color3.new(1, 1, 1)
-    spinBotButton.Text = "Spin Bot"
-    spinBotButton.TextScaled = true
-    spinBotButton.Parent = frame
-
-    local frameCorner = Instance.new("UICorner")
-    frameCorner.Parent = spinBotButton
-    frameCorner.CornerRadius = UDim.new(0.15, 0)
-
-    spinBotButton.MouseButton1Click:Connect(function()
-        print("Spin bot button clicked.")
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Bondalinga/sigma/main/spin.lua'))()
-    end)
-
-    print("Spin bot button initialized.")
-end
-
--- Section: GUI Management
-local function getOrCreateScreenGui()
-    print("Getting or creating ScreenGui...")
-    local playerGui = game:GetService("Players").LocalPlayer.PlayerGui
-    local screenGui = playerGui:FindFirstChild("ScreenGui")
-
-    if not screenGui then
-        print("ScreenGui not found, creating a new one.")
-        screenGui = Instance.new("ScreenGui")
-        screenGui.Name = "ScreenGui"
-        screenGui.Parent = playerGui
+        return req(obj)
     end
 
-    print("ScreenGui obtained or created.")
-    return screenGui
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.guis.Enabled = true
+	end)
+end
+local function HLCJH_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Close"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.basketballlegends.Enabled = false
+		script.Parent.Parent.Parent.Parent.Enabled = false
+	end)
+end
+local function AEPKLS_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.AlwaysGreen.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_AlwaysGreen"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bondalinga/sigma/main/sigma2.lua"))()
+	end)
+end
+local function YAGXWEA_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.SpinBot.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_SpinBot"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bondalinga/sigma/main/spin.lua"))()
+	end)
+end
+local function TQPG_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.AutoBlock.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_AutoBlock"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bondalinga/sigma/main/block.lua"))()
+		print("Sigma")
+	end)
+end
+local function KMNYZS_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Close1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Enabled = false
+	end)
+end
+local function VXWI_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Basket Ball Legends"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.basketballlegends.Enabled = true
+	end)
+	
 end
 
--- Main Execution
-local function main()
-    print("Running main function...")
-    local screenGui = getOrCreateScreenGui()
-
-    local frame = initializeFrame()
-    frame.Parent = screenGui
-    -- setupDragging(frame) -- Assuming this is defined elsewhere in your code
-
-    local toggleButton = initializeToggleButton(screenGui)
-    toggleButton.MouseButton1Click:Connect(function()
-        print("Toggle button clicked.")
-        frame.Visible = not frame.Visible
-    end)
-
-    initializeHighlightButton(frame)
-    perfectShot(frame)
-    spinBot(frame)
-
-    print("Main function completed.")
-end
-
-print("Script starting...")
-main()
+coroutine.wrap(ZLPI_fake_script)()
+coroutine.wrap(HLCJH_fake_script)()
+coroutine.wrap(AEPKLS_fake_script)()
+coroutine.wrap(YAGXWEA_fake_script)()
+coroutine.wrap(TQPG_fake_script)()
+coroutine.wrap(KMNYZS_fake_script)()
+coroutine.wrap(VXWI_fake_script)()
