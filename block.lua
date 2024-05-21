@@ -97,7 +97,7 @@ end
 
 button.MouseButton1Click:Connect(onButtonClicked)
 UserInputService.InputBegan:Connect(function(input)
-    if input.KeyCode == Enum.KeyCode.Z then
+    if input.KeyCode == Enum.KeyCode.T then
         toggleFollowing()
     end
 end)
