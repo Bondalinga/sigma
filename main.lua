@@ -20,14 +20,18 @@ local Converted = {
 	["_LocalScript3"] = Instance.new("LocalScript");
 	["_AutoBlock"] = Instance.new("TextButton");
 	["_LocalScript4"] = Instance.new("LocalScript");
+	["_Speed"] = Instance.new("TextButton");
+	["_LocalScript5"] = Instance.new("LocalScript");
+	["_BallTp"] = Instance.new("TextButton");
+	["_LocalScript6"] = Instance.new("LocalScript");
 	["_MainFrame1"] = Instance.new("Frame");
 	["_Tittle1"] = Instance.new("TextLabel");
 	["_Close1"] = Instance.new("TextButton");
-	["_LocalScript5"] = Instance.new("LocalScript");
+	["_LocalScript7"] = Instance.new("LocalScript");
 	["_Games"] = Instance.new("ScrollingFrame");
 	["_UIListLayout"] = Instance.new("UIListLayout");
 	["_Basket Ball Legends"] = Instance.new("TextButton");
-	["_LocalScript6"] = Instance.new("LocalScript");
+	["_LocalScript8"] = Instance.new("LocalScript");
 	["_UICorner1"] = Instance.new("UICorner");
 }
 
@@ -63,11 +67,11 @@ Converted["_TextButton"].Parent = Converted["_open"]
 Converted["_UICorner"].CornerRadius = UDim.new(0.100000001, 0)
 Converted["_UICorner"].Parent = Converted["_TextButton"]
 
+Converted["_guis"].Enabled = false
 Converted["_guis"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_guis"].Name = "guis"
 Converted["_guis"].Parent = Converted["_main"]
 
-Converted["_basketballlegends"].Enabled = false
 Converted["_basketballlegends"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_basketballlegends"].Name = "basketballlegends"
 Converted["_basketballlegends"].Parent = Converted["_guis"]
@@ -158,6 +162,36 @@ Converted["_AutoBlock"].Size = UDim2.new(0, 200, 0, 50)
 Converted["_AutoBlock"].Name = "AutoBlock"
 Converted["_AutoBlock"].Parent = Converted["_MainFrame"]
 
+Converted["_Speed"].Font = Enum.Font.FredokaOne
+Converted["_Speed"].Text = "Speed"
+Converted["_Speed"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_Speed"].TextScaled = true
+Converted["_Speed"].TextSize = 14
+Converted["_Speed"].TextStrokeTransparency = 0
+Converted["_Speed"].TextWrapped = true
+Converted["_Speed"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_Speed"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Speed"].BorderSizePixel = 0
+Converted["_Speed"].Position = UDim2.new(0.0126382308, 0, 0.307692319, 0)
+Converted["_Speed"].Size = UDim2.new(0, 201, 0, 50)
+Converted["_Speed"].Name = "Speed"
+Converted["_Speed"].Parent = Converted["_MainFrame"]
+
+Converted["_BallTp"].Font = Enum.Font.FredokaOne
+Converted["_BallTp"].Text = "Ball Tp: F"
+Converted["_BallTp"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_BallTp"].TextScaled = true
+Converted["_BallTp"].TextSize = 14
+Converted["_BallTp"].TextStrokeTransparency = 0
+Converted["_BallTp"].TextWrapped = true
+Converted["_BallTp"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_BallTp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_BallTp"].BorderSizePixel = 0
+Converted["_BallTp"].Position = UDim2.new(0.34123224, 0, 0.307692319, 0)
+Converted["_BallTp"].Size = UDim2.new(0, 201, 0, 50)
+Converted["_BallTp"].Name = "BallTp"
+Converted["_BallTp"].Parent = Converted["_MainFrame"]
+
 Converted["_MainFrame1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_MainFrame1"].BackgroundColor3 = Color3.fromRGB(86.00000247359276, 86.00000247359276, 86.00000247359276)
 Converted["_MainFrame1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -240,7 +274,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function ZLPI_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
+local function NFCZKAL_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextButton"]
@@ -257,7 +291,7 @@ local function ZLPI_fake_script() -- Fake Script: StarterGui.main.open.TextButto
 		script.Parent.Parent.Parent.guis.Enabled = true
 	end)
 end
-local function HLCJH_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
+local function PKPQAK_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close"]
@@ -275,7 +309,7 @@ local function HLCJH_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 		script.Parent.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function AEPKLS_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.AlwaysGreen.LocalScript
+local function XCCBM_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.AlwaysGreen.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AlwaysGreen"]
@@ -292,7 +326,7 @@ local function AEPKLS_fake_script() -- Fake Script: StarterGui.main.guis.basketb
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bondalinga/sigma/main/sigma2.lua"))()
 	end)
 end
-local function YAGXWEA_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.SpinBot.LocalScript
+local function EXPJRBK_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.SpinBot.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SpinBot"]
@@ -309,7 +343,7 @@ local function YAGXWEA_fake_script() -- Fake Script: StarterGui.main.guis.basket
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bondalinga/sigma/main/spin.lua"))()
 	end)
 end
-local function TQPG_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.AutoBlock.LocalScript
+local function BDRQYOD_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.AutoBlock.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AutoBlock"]
@@ -327,7 +361,41 @@ local function TQPG_fake_script() -- Fake Script: StarterGui.main.guis.basketbal
 		print("Sigma")
 	end)
 end
-local function KMNYZS_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
+local function MHQKZSG_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Speed.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Speed"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bondalinga/sigma/main/speed.lua"))()
+	end)
+end
+local function YKBUHI_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.BallTp.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_BallTp"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bondalinga/sigma/main/balltp.lua"))()
+	end)
+end
+local function IDAVMG_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close1"]
@@ -344,7 +412,7 @@ local function KMNYZS_fake_script() -- Fake Script: StarterGui.main.guis.MainFra
 		script.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function VXWI_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
+local function SEPLG_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Basket Ball Legends"]
@@ -363,10 +431,12 @@ local function VXWI_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame
 	
 end
 
-coroutine.wrap(ZLPI_fake_script)()
-coroutine.wrap(HLCJH_fake_script)()
-coroutine.wrap(AEPKLS_fake_script)()
-coroutine.wrap(YAGXWEA_fake_script)()
-coroutine.wrap(TQPG_fake_script)()
-coroutine.wrap(KMNYZS_fake_script)()
-coroutine.wrap(VXWI_fake_script)()
+coroutine.wrap(NFCZKAL_fake_script)()
+coroutine.wrap(PKPQAK_fake_script)()
+coroutine.wrap(XCCBM_fake_script)()
+coroutine.wrap(EXPJRBK_fake_script)()
+coroutine.wrap(BDRQYOD_fake_script)()
+coroutine.wrap(MHQKZSG_fake_script)()
+coroutine.wrap(YKBUHI_fake_script)()
+coroutine.wrap(IDAVMG_fake_script)()
+coroutine.wrap(SEPLG_fake_script)()
