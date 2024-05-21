@@ -9,6 +9,7 @@ local targetToolName = "Basketball"
 local followEnabled = false
 local playerWithBall = nil
 local followingPlayer = nil
+local followDistanceLimit = 50
 
 -- UI Setup
 local screenGui = Instance.new("ScreenGui")
@@ -33,7 +34,7 @@ button.Parent = screenGui
 
 local function findNearestPlayerWithTool(toolName)
     local nearestPlayer = nil
-    local shortestDistance = math.huge
+    local shortestDistance = followDistanceLimit
     
     for _, player in pairs(Players:GetPlayers()) do
         if player.Character and player.Character:FindFirstChild(toolName) then
@@ -51,17 +52,21 @@ local function moveToInFrontOf(target)
     if not target or not target.Character or not target.Character:FindFirstChild("HumanoidRootPart") then return end
     
     local targetHRP = target.Character:FindFirstChild("HumanoidRootPart")
-    local targetPosition = targetHRP.Position
-    local targetLookVector = targetHRP.CFrame.LookVector
+    local distance = (HumanoidRootPart.Position - targetHRP.Position).magnitude
+    
+    if distance <= followDistanceLimit then
+        local targetPosition = targetHRP.Position
+        local targetLookVector = targetHRP.CFrame.LookVector
 
-    -- Calculate a position 3 studs in front of the target's HumanoidRootPart
-    local newPosition = targetPosition + targetLookVector * 3
-    local newCFrame = CFrame.new(newPosition, targetPosition)
+        -- Calculate a position 3 studs in front of the target's HumanoidRootPart
+        local newPosition = targetPosition + targetLookVector * 3
+        local newCFrame = CFrame.new(newPosition, targetPosition)
 
-    -- Move the local player's HumanoidRootPart to this new position and face the target
-    HumanoidRootPart.CFrame = newCFrame
+        -- Move the local player's HumanoidRootPart to this new position and face the target
+        HumanoidRootPart.CFrame = newCFrame
 
-    followingPlayer = target
+        followingPlayer = target
+    end
 end
 
 local function onButtonClicked()
@@ -83,10 +88,8 @@ end
 local function toggleFollowing()
     followEnabled = not followEnabled
     if followEnabled then
-        print(followEnabled)
         spawn(followLoop)
     else
-        print(followingPlayer)
         wait(1)
         followingPlayer = nil
     end
