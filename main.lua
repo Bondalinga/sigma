@@ -46,16 +46,55 @@ local Converted = {
 	["_onoroff5"] = Instance.new("Frame");
 	["_UICorner11"] = Instance.new("UICorner");
 	["_UICorner12"] = Instance.new("UICorner");
+	["_Fov"] = Instance.new("TextButton");
+	["_LocalScript8"] = Instance.new("LocalScript");
+	["_onoroff6"] = Instance.new("Frame");
 	["_UICorner13"] = Instance.new("UICorner");
+	["_Fov1"] = Instance.new("TextBox");
+	["_UICorner14"] = Instance.new("UICorner");
+	["_UICorner15"] = Instance.new("UICorner");
 	["_MainFrame1"] = Instance.new("Frame");
 	["_Tittle1"] = Instance.new("TextLabel");
 	["_Close1"] = Instance.new("TextButton");
-	["_LocalScript8"] = Instance.new("LocalScript");
+	["_LocalScript9"] = Instance.new("LocalScript");
 	["_Games"] = Instance.new("ScrollingFrame");
 	["_UIListLayout1"] = Instance.new("UIListLayout");
 	["_Basket Ball Legends"] = Instance.new("TextButton");
-	["_LocalScript9"] = Instance.new("LocalScript");
-	["_UICorner14"] = Instance.new("UICorner");
+	["_LocalScript10"] = Instance.new("LocalScript");
+	["_UICorner16"] = Instance.new("UICorner");
+	["_Global"] = Instance.new("TextButton");
+	["_LocalScript11"] = Instance.new("LocalScript");
+	["_UICorner17"] = Instance.new("UICorner");
+	["_UICorner18"] = Instance.new("UICorner");
+	["_Global1"] = Instance.new("ScreenGui");
+	["_MainFrame2"] = Instance.new("Frame");
+	["_Tittle2"] = Instance.new("TextLabel");
+	["_Close2"] = Instance.new("TextButton");
+	["_LocalScript12"] = Instance.new("LocalScript");
+	["_ScrollingFrame1"] = Instance.new("ScrollingFrame");
+	["_InfiniteYeild"] = Instance.new("TextButton");
+	["_LocalScript13"] = Instance.new("LocalScript");
+	["_onoroff7"] = Instance.new("Frame");
+	["_UICorner19"] = Instance.new("UICorner");
+	["_UICorner20"] = Instance.new("UICorner");
+	["_UIListLayout2"] = Instance.new("UIListLayout");
+	["_Fov2"] = Instance.new("TextButton");
+	["_LocalScript14"] = Instance.new("LocalScript");
+	["_onoroff8"] = Instance.new("Frame");
+	["_UICorner21"] = Instance.new("UICorner");
+	["_Fov3"] = Instance.new("TextBox");
+	["_UICorner22"] = Instance.new("UICorner");
+	["_ClickTp1"] = Instance.new("TextButton");
+	["_LocalScript15"] = Instance.new("LocalScript");
+	["_onoroff9"] = Instance.new("Frame");
+	["_UICorner23"] = Instance.new("UICorner");
+	["_UICorner24"] = Instance.new("UICorner");
+	["_Esp"] = Instance.new("TextButton");
+	["_LocalScript16"] = Instance.new("LocalScript");
+	["_onoroff10"] = Instance.new("Frame");
+	["_UICorner25"] = Instance.new("UICorner");
+	["_UICorner26"] = Instance.new("UICorner");
+	["_UICorner27"] = Instance.new("UICorner");
 }
 
 -- Properties:
@@ -95,6 +134,7 @@ Converted["_guis"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_guis"].Name = "guis"
 Converted["_guis"].Parent = Converted["_main"]
 
+Converted["_basketballlegends"].Enabled = false
 Converted["_basketballlegends"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_basketballlegends"].Name = "basketballlegends"
 Converted["_basketballlegends"].Parent = Converted["_guis"]
@@ -140,7 +180,6 @@ Converted["_Close"].Size = UDim2.new(0, 40, 0, 40)
 Converted["_Close"].Name = "Close"
 Converted["_Close"].Parent = Converted["_MainFrame"]
 
-Converted["_ScrollingFrame"].CanvasPosition = Vector2.new(0, 150)
 Converted["_ScrollingFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ScrollingFrame"].Active = true
 Converted["_ScrollingFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -334,8 +373,53 @@ Converted["_UICorner11"].Parent = Converted["_onoroff5"]
 Converted["_UICorner12"].CornerRadius = UDim.new(0.5, 0)
 Converted["_UICorner12"].Parent = Converted["_Phase"]
 
-Converted["_UICorner13"].CornerRadius = UDim.new(0.075000003, 0)
-Converted["_UICorner13"].Parent = Converted["_MainFrame"]
+Converted["_Fov"].Font = Enum.Font.FredokaOne
+Converted["_Fov"].Text = " Fov Changer"
+Converted["_Fov"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_Fov"].TextScaled = true
+Converted["_Fov"].TextSize = 14
+Converted["_Fov"].TextStrokeTransparency = 0
+Converted["_Fov"].TextWrapped = true
+Converted["_Fov"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Fov"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_Fov"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Fov"].BorderSizePixel = 0
+Converted["_Fov"].Position = UDim2.new(0, 0, 0.42955327, 0)
+Converted["_Fov"].Size = UDim2.new(0, 578, 0, 50)
+Converted["_Fov"].Name = "Fov"
+Converted["_Fov"].Parent = Converted["_ScrollingFrame"]
+
+Converted["_onoroff6"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
+Converted["_onoroff6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_onoroff6"].BorderSizePixel = 0
+Converted["_onoroff6"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
+Converted["_onoroff6"].Size = UDim2.new(0, 30, 0, 30)
+Converted["_onoroff6"].Name = "onoroff"
+Converted["_onoroff6"].Parent = Converted["_Fov"]
+
+Converted["_UICorner13"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner13"].Parent = Converted["_onoroff6"]
+
+Converted["_Fov1"].Font = Enum.Font.FredokaOne
+Converted["_Fov1"].Text = ". . ."
+Converted["_Fov1"].TextColor3 = Color3.fromRGB(77.00000301003456, 77.00000301003456, 77.00000301003456)
+Converted["_Fov1"].TextSize = 21
+Converted["_Fov1"].TextStrokeTransparency = 0
+Converted["_Fov1"].TextWrapped = true
+Converted["_Fov1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Fov1"].BackgroundTransparency = 1
+Converted["_Fov1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Fov1"].BorderSizePixel = 0
+Converted["_Fov1"].Position = UDim2.new(0.498269886, 0, 0.200000003, 0)
+Converted["_Fov1"].Size = UDim2.new(0, 238, 0, 40)
+Converted["_Fov1"].Name = "Fov"
+Converted["_Fov1"].Parent = Converted["_Fov"]
+
+Converted["_UICorner14"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner14"].Parent = Converted["_Fov"]
+
+Converted["_UICorner15"].CornerRadius = UDim.new(0.100000001, 0)
+Converted["_UICorner15"].Parent = Converted["_MainFrame"]
 
 Converted["_MainFrame1"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_MainFrame1"].BackgroundColor3 = Color3.fromRGB(86.00000247359276, 86.00000247359276, 86.00000247359276)
@@ -409,8 +493,226 @@ Converted["_Basket Ball Legends"].Size = UDim2.new(0, 600, 0, 50)
 Converted["_Basket Ball Legends"].Name = "Basket Ball Legends"
 Converted["_Basket Ball Legends"].Parent = Converted["_Games"]
 
-Converted["_UICorner14"].CornerRadius = UDim.new(0.200000003, 0)
-Converted["_UICorner14"].Parent = Converted["_Basket Ball Legends"]
+Converted["_UICorner16"].CornerRadius = UDim.new(0.100000001, 0)
+Converted["_UICorner16"].Parent = Converted["_Basket Ball Legends"]
+
+Converted["_Global"].Font = Enum.Font.FredokaOne
+Converted["_Global"].Text = "Global Scripts"
+Converted["_Global"].TextColor3 = Color3.fromRGB(58.00000034272671, 58.00000034272671, 58.00000034272671)
+Converted["_Global"].TextDirection = Enum.TextDirection.RightToLeft
+Converted["_Global"].TextSize = 40
+Converted["_Global"].TextStrokeTransparency = 0
+Converted["_Global"].TextWrapped = true
+Converted["_Global"].BackgroundColor3 = Color3.fromRGB(111.00000858306885, 111.00000858306885, 111.00000858306885)
+Converted["_Global"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Global"].BorderSizePixel = 2
+Converted["_Global"].Position = UDim2.new(0.0274193548, 0, 0, 0)
+Converted["_Global"].SelectionOrder = 2
+Converted["_Global"].Size = UDim2.new(0, 600, 0, 50)
+Converted["_Global"].Name = "Global"
+Converted["_Global"].Parent = Converted["_Games"]
+
+Converted["_UICorner17"].CornerRadius = UDim.new(0.100000001, 0)
+Converted["_UICorner17"].Parent = Converted["_Global"]
+
+Converted["_UICorner18"].CornerRadius = UDim.new(0.100000001, 0)
+Converted["_UICorner18"].Parent = Converted["_MainFrame1"]
+
+Converted["_Global1"].Enabled = false
+Converted["_Global1"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_Global1"].Name = "Global"
+Converted["_Global1"].Parent = Converted["_guis"]
+
+Converted["_MainFrame2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_MainFrame2"].BackgroundColor3 = Color3.fromRGB(86.00000247359276, 86.00000247359276, 86.00000247359276)
+Converted["_MainFrame2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_MainFrame2"].BorderSizePixel = 2
+Converted["_MainFrame2"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_MainFrame2"].Size = UDim2.new(0, 633, 0, 338)
+Converted["_MainFrame2"].Name = "MainFrame"
+Converted["_MainFrame2"].Parent = Converted["_Global1"]
+
+Converted["_Tittle2"].Font = Enum.Font.FredokaOne
+Converted["_Tittle2"].Text = "Bondos Hub"
+Converted["_Tittle2"].TextColor3 = Color3.fromRGB(58.00000034272671, 58.00000034272671, 58.00000034272671)
+Converted["_Tittle2"].TextScaled = true
+Converted["_Tittle2"].TextSize = 14
+Converted["_Tittle2"].TextStrokeTransparency = 0
+Converted["_Tittle2"].TextWrapped = true
+Converted["_Tittle2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Tittle2"].BackgroundTransparency = 1
+Converted["_Tittle2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Tittle2"].BorderSizePixel = 0
+Converted["_Tittle2"].Size = UDim2.new(0, 633, 0, 36)
+Converted["_Tittle2"].Name = "Tittle"
+Converted["_Tittle2"].Parent = Converted["_MainFrame2"]
+
+Converted["_Close2"].Font = Enum.Font.FredokaOne
+Converted["_Close2"].Text = "X"
+Converted["_Close2"].TextColor3 = Color3.fromRGB(58.00000034272671, 58.00000034272671, 58.00000034272671)
+Converted["_Close2"].TextScaled = true
+Converted["_Close2"].TextSize = 14
+Converted["_Close2"].TextStrokeTransparency = 0
+Converted["_Close2"].TextWrapped = true
+Converted["_Close2"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Close2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Close2"].BackgroundTransparency = 1
+Converted["_Close2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Close2"].BorderSizePixel = 0
+Converted["_Close2"].Position = UDim2.new(0.957345963, 0, 0.0798816532, 0)
+Converted["_Close2"].Size = UDim2.new(0, 40, 0, 40)
+Converted["_Close2"].Name = "Close"
+Converted["_Close2"].Parent = Converted["_MainFrame2"]
+
+Converted["_ScrollingFrame1"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ScrollingFrame1"].Active = true
+Converted["_ScrollingFrame1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ScrollingFrame1"].BackgroundTransparency = 1
+Converted["_ScrollingFrame1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ScrollingFrame1"].BorderSizePixel = 0
+Converted["_ScrollingFrame1"].Position = UDim2.new(0.0126382308, 0, 0.139053255, 0)
+Converted["_ScrollingFrame1"].Size = UDim2.new(0, 625, 0, 291)
+Converted["_ScrollingFrame1"].Parent = Converted["_MainFrame2"]
+
+Converted["_InfiniteYeild"].Font = Enum.Font.FredokaOne
+Converted["_InfiniteYeild"].Text = " Infinite Yeild"
+Converted["_InfiniteYeild"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_InfiniteYeild"].TextScaled = true
+Converted["_InfiniteYeild"].TextSize = 14
+Converted["_InfiniteYeild"].TextStrokeTransparency = 0
+Converted["_InfiniteYeild"].TextWrapped = true
+Converted["_InfiniteYeild"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_InfiniteYeild"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_InfiniteYeild"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_InfiniteYeild"].BorderSizePixel = 0
+Converted["_InfiniteYeild"].Size = UDim2.new(0, 578, 0, 50)
+Converted["_InfiniteYeild"].Name = "InfiniteYeild"
+Converted["_InfiniteYeild"].Parent = Converted["_ScrollingFrame1"]
+
+Converted["_onoroff7"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
+Converted["_onoroff7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_onoroff7"].BorderSizePixel = 0
+Converted["_onoroff7"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
+Converted["_onoroff7"].Size = UDim2.new(0, 30, 0, 30)
+Converted["_onoroff7"].Name = "onoroff"
+Converted["_onoroff7"].Parent = Converted["_InfiniteYeild"]
+
+Converted["_UICorner19"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner19"].Parent = Converted["_onoroff7"]
+
+Converted["_UICorner20"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner20"].Parent = Converted["_InfiniteYeild"]
+
+Converted["_UIListLayout2"].Padding = UDim.new(0, 10)
+Converted["_UIListLayout2"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout2"].Parent = Converted["_ScrollingFrame1"]
+
+Converted["_Fov2"].Font = Enum.Font.FredokaOne
+Converted["_Fov2"].Text = " Fov Changer"
+Converted["_Fov2"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_Fov2"].TextScaled = true
+Converted["_Fov2"].TextSize = 14
+Converted["_Fov2"].TextStrokeTransparency = 0
+Converted["_Fov2"].TextWrapped = true
+Converted["_Fov2"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Fov2"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_Fov2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Fov2"].BorderSizePixel = 0
+Converted["_Fov2"].Position = UDim2.new(0, 0, 0.42955327, 0)
+Converted["_Fov2"].Size = UDim2.new(0, 578, 0, 50)
+Converted["_Fov2"].Name = "Fov"
+Converted["_Fov2"].Parent = Converted["_ScrollingFrame1"]
+
+Converted["_onoroff8"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
+Converted["_onoroff8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_onoroff8"].BorderSizePixel = 0
+Converted["_onoroff8"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
+Converted["_onoroff8"].Size = UDim2.new(0, 30, 0, 30)
+Converted["_onoroff8"].Name = "onoroff"
+Converted["_onoroff8"].Parent = Converted["_Fov2"]
+
+Converted["_UICorner21"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner21"].Parent = Converted["_onoroff8"]
+
+Converted["_Fov3"].Font = Enum.Font.FredokaOne
+Converted["_Fov3"].Text = ". . ."
+Converted["_Fov3"].TextColor3 = Color3.fromRGB(77.00000301003456, 77.00000301003456, 77.00000301003456)
+Converted["_Fov3"].TextSize = 21
+Converted["_Fov3"].TextStrokeTransparency = 0
+Converted["_Fov3"].TextWrapped = true
+Converted["_Fov3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Fov3"].BackgroundTransparency = 1
+Converted["_Fov3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Fov3"].BorderSizePixel = 0
+Converted["_Fov3"].Position = UDim2.new(0.498269886, 0, 0.200000003, 0)
+Converted["_Fov3"].Size = UDim2.new(0, 238, 0, 40)
+Converted["_Fov3"].Name = "Fov"
+Converted["_Fov3"].Parent = Converted["_Fov2"]
+
+Converted["_UICorner22"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner22"].Parent = Converted["_Fov2"]
+
+Converted["_ClickTp1"].Font = Enum.Font.FredokaOne
+Converted["_ClickTp1"].Text = " Click Tp: V"
+Converted["_ClickTp1"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_ClickTp1"].TextScaled = true
+Converted["_ClickTp1"].TextSize = 14
+Converted["_ClickTp1"].TextStrokeTransparency = 0
+Converted["_ClickTp1"].TextWrapped = true
+Converted["_ClickTp1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_ClickTp1"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_ClickTp1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ClickTp1"].BorderSizePixel = 0
+Converted["_ClickTp1"].Position = UDim2.new(0, 0, 0.618556678, 0)
+Converted["_ClickTp1"].Size = UDim2.new(0, 578, 0, 50)
+Converted["_ClickTp1"].Name = "ClickTp"
+Converted["_ClickTp1"].Parent = Converted["_ScrollingFrame1"]
+
+Converted["_onoroff9"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
+Converted["_onoroff9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_onoroff9"].BorderSizePixel = 0
+Converted["_onoroff9"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
+Converted["_onoroff9"].Size = UDim2.new(0, 30, 0, 30)
+Converted["_onoroff9"].Name = "onoroff"
+Converted["_onoroff9"].Parent = Converted["_ClickTp1"]
+
+Converted["_UICorner23"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner23"].Parent = Converted["_onoroff9"]
+
+Converted["_UICorner24"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner24"].Parent = Converted["_ClickTp1"]
+
+Converted["_Esp"].Font = Enum.Font.FredokaOne
+Converted["_Esp"].Text = " Exunys Esp"
+Converted["_Esp"].TextColor3 = Color3.fromRGB(70.00000342726707, 70.00000342726707, 70.00000342726707)
+Converted["_Esp"].TextScaled = true
+Converted["_Esp"].TextSize = 14
+Converted["_Esp"].TextStrokeTransparency = 0
+Converted["_Esp"].TextWrapped = true
+Converted["_Esp"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Esp"].BackgroundColor3 = Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709)
+Converted["_Esp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Esp"].BorderSizePixel = 0
+Converted["_Esp"].Size = UDim2.new(0, 578, 0, 50)
+Converted["_Esp"].Name = "Esp"
+Converted["_Esp"].Parent = Converted["_ScrollingFrame1"]
+
+Converted["_onoroff10"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
+Converted["_onoroff10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_onoroff10"].BorderSizePixel = 0
+Converted["_onoroff10"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
+Converted["_onoroff10"].Size = UDim2.new(0, 30, 0, 30)
+Converted["_onoroff10"].Name = "onoroff"
+Converted["_onoroff10"].Parent = Converted["_Esp"]
+
+Converted["_UICorner25"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner25"].Parent = Converted["_onoroff10"]
+
+Converted["_UICorner26"].CornerRadius = UDim.new(0.5, 0)
+Converted["_UICorner26"].Parent = Converted["_Esp"]
+
+Converted["_UICorner27"].CornerRadius = UDim.new(0.100000001, 0)
+Converted["_UICorner27"].Parent = Converted["_MainFrame2"]
 
 -- Fake Module Scripts:
 
@@ -419,7 +721,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function MZJPCDD_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
+local function MCEL_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextButton"]
@@ -436,7 +738,7 @@ local function MZJPCDD_fake_script() -- Fake Script: StarterGui.main.open.TextBu
 		script.Parent.Parent.Parent.guis.Enabled = true
 	end)
 end
-local function KQQDFSW_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
+local function TZURP_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close"]
@@ -451,10 +753,11 @@ local function KQQDFSW_fake_script() -- Fake Script: StarterGui.main.guis.basket
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.basketballlegends.Enabled = false
+		script.Parent.Parent.Parent.Parent.Global.Enabled = false
 		script.Parent.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function DBJVZH_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AlwaysGreen.LocalScript
+local function DGCXXZ_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AlwaysGreen.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AlwaysGreen"]
@@ -504,7 +807,7 @@ local function DBJVZH_fake_script() -- Fake Script: StarterGui.main.guis.basketb
 	-- Connect the key press event
 	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 end
-local function YVQTZFX_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AutoBlock.LocalScript
+local function WKUNHM_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AutoBlock.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AutoBlock"]
@@ -660,7 +963,7 @@ local function YVQTZFX_fake_script() -- Fake Script: StarterGui.main.guis.basket
 	end)
 	
 end
-local function NPZZP_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.BallTp.LocalScript
+local function DLMHC_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.BallTp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_BallTp"]
@@ -759,7 +1062,7 @@ local function NPZZP_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 	end)
 	
 end
-local function TOIS_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.ClickTp.LocalScript
+local function GJFZW_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.ClickTp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ClickTp"]
@@ -816,7 +1119,7 @@ local function TOIS_fake_script() -- Fake Script: StarterGui.main.guis.basketbal
 	end)
 	
 end
-local function EDWT_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.SpinBot.LocalScript
+local function AITSY_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.SpinBot.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SpinBot"]
@@ -868,7 +1171,7 @@ local function EDWT_fake_script() -- Fake Script: StarterGui.main.guis.basketbal
 	end)
 	
 end
-local function RLNKPDG_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Phase.LocalScript
+local function XBTLXQ_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Phase.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Phase"]
@@ -926,7 +1229,57 @@ local function RLNKPDG_fake_script() -- Fake Script: StarterGui.main.guis.basket
 	end)
 	
 end
-local function WOINYJN_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
+local function MKYAR_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Fov.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Fov"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+	
+	
+	-- Function to change the FOV
+	local function changeFOV(newFOV)
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			local camera = game.Workspace.CurrentCamera
+			camera.FieldOfView = newFOV  -- Directly setting the new FOV
+		end
+	end
+	
+	-- Connecting the button click event
+	script.Parent.MouseButton1Click:Connect(function()
+		local fovText = script.Parent.Fov.Text
+		local newFOV = tonumber(fovText)  -- Convert the text to a number
+		if newFOV then
+			changeFOV(newFOV)
+		else
+			warn("Invalid FOV value: " .. fovText)  -- Warn if the input is not a valid number
+		end
+	end)
+	
+	
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
+			on = true
+		else
+			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+			on = false
+		end
+	end)
+	
+end
+local function HABLGF_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close1"]
@@ -943,7 +1296,7 @@ local function WOINYJN_fake_script() -- Fake Script: StarterGui.main.guis.MainFr
 		script.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function JQYK_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
+local function PDCCEZW_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Basket Ball Legends"]
@@ -961,14 +1314,199 @@ local function JQYK_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame
 	end)
 	
 end
+local function SHPXAM_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Global.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Global"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
-coroutine.wrap(MZJPCDD_fake_script)()
-coroutine.wrap(KQQDFSW_fake_script)()
-coroutine.wrap(DBJVZH_fake_script)()
-coroutine.wrap(YVQTZFX_fake_script)()
-coroutine.wrap(NPZZP_fake_script)()
-coroutine.wrap(TOIS_fake_script)()
-coroutine.wrap(EDWT_fake_script)()
-coroutine.wrap(RLNKPDG_fake_script)()
-coroutine.wrap(WOINYJN_fake_script)()
-coroutine.wrap(JQYK_fake_script)()
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Global.Enabled = true
+	end)
+	
+end
+local function CHGHNPZ_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.Close.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Close2"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.basketballlegends.Enabled = false
+		script.Parent.Parent.Parent.Parent.Global.Enabled = false
+		script.Parent.Parent.Parent.Parent.Enabled = false
+	end)
+end
+local function FILASAS_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.InfiniteYeild.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_InfiniteYeild"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+	end)
+end
+local function SLUYQ_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.Fov.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Fov2"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+	
+	
+	-- Function to change the FOV
+	local function changeFOV(newFOV)
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			local camera = game.Workspace.CurrentCamera
+			camera.FieldOfView = newFOV  -- Directly setting the new FOV
+		end
+	end
+	
+	-- Connecting the button click event
+	script.Parent.MouseButton1Click:Connect(function()
+		local fovText = script.Parent.Fov.Text
+		local newFOV = tonumber(fovText)  -- Convert the text to a number
+		if newFOV then
+			changeFOV(newFOV)
+		else
+			warn("Invalid FOV value: " .. fovText)  -- Warn if the input is not a valid number
+		end
+	end)
+	
+	
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
+			on = true
+		else
+			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+			on = false
+		end
+	end)
+	
+end
+local function ILNV_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.ClickTp.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_ClickTp1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+	
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
+			on = true
+		else
+			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+			on = false
+		end
+	end)
+	
+	-- Get the Player
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	
+	-- Define the key to teleport
+	local teleportKey = Enum.KeyCode.V
+	
+	-- Function to teleport player to mouse position
+	local function teleportToCursor()
+		-- Check if the player has a character and a HumanoidRootPart
+		if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+			-- Get the target position from the mouse's hit position
+			local targetPosition = mouse.Hit.p
+	
+			-- Teleport the player's character to the target position
+			player.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
+		end
+	end
+	
+	-- Connect the function to the key press
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessedEvent)
+		-- Check if the input is the teleport key and not when the player is chatting
+		if input.KeyCode == teleportKey and not gameProcessedEvent then
+			if on == true then
+				teleportToCursor()
+			end
+		end
+	end)
+	
+end
+local function DDTXIVD_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.Esp.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Esp"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/s7viVmDR"))()
+	end)
+end
+
+coroutine.wrap(MCEL_fake_script)()
+coroutine.wrap(TZURP_fake_script)()
+coroutine.wrap(DGCXXZ_fake_script)()
+coroutine.wrap(WKUNHM_fake_script)()
+coroutine.wrap(DLMHC_fake_script)()
+coroutine.wrap(GJFZW_fake_script)()
+coroutine.wrap(AITSY_fake_script)()
+coroutine.wrap(XBTLXQ_fake_script)()
+coroutine.wrap(MKYAR_fake_script)()
+coroutine.wrap(HABLGF_fake_script)()
+coroutine.wrap(PDCCEZW_fake_script)()
+coroutine.wrap(SHPXAM_fake_script)()
+coroutine.wrap(CHGHNPZ_fake_script)()
+coroutine.wrap(FILASAS_fake_script)()
+coroutine.wrap(SLUYQ_fake_script)()
+coroutine.wrap(ILNV_fake_script)()
+coroutine.wrap(DDTXIVD_fake_script)()
