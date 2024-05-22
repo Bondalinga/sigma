@@ -140,6 +140,7 @@ Converted["_Close"].Size = UDim2.new(0, 40, 0, 40)
 Converted["_Close"].Name = "Close"
 Converted["_Close"].Parent = Converted["_MainFrame"]
 
+Converted["_ScrollingFrame"].CanvasPosition = Vector2.new(0, 150)
 Converted["_ScrollingFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ScrollingFrame"].Active = true
 Converted["_ScrollingFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -165,7 +166,7 @@ Converted["_AlwaysGreen"].Size = UDim2.new(0, 578, 0, 50)
 Converted["_AlwaysGreen"].Name = "AlwaysGreen"
 Converted["_AlwaysGreen"].Parent = Converted["_ScrollingFrame"]
 
-Converted["_onoroff"].BackgroundColor3 = Color3.fromRGB(117.00000062584877, 255, 140.00000685453415)
+Converted["_onoroff"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
 Converted["_onoroff"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_onoroff"].BorderSizePixel = 0
 Converted["_onoroff"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
@@ -195,7 +196,7 @@ Converted["_AutoBlock"].Size = UDim2.new(0, 578, 0, 50)
 Converted["_AutoBlock"].Name = "AutoBlock"
 Converted["_AutoBlock"].Parent = Converted["_ScrollingFrame"]
 
-Converted["_onoroff1"].BackgroundColor3 = Color3.fromRGB(117.00000062584877, 255, 140.00000685453415)
+Converted["_onoroff1"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
 Converted["_onoroff1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_onoroff1"].BorderSizePixel = 0
 Converted["_onoroff1"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
@@ -225,7 +226,7 @@ Converted["_BallTp"].Size = UDim2.new(0, 578, 0, 50)
 Converted["_BallTp"].Name = "BallTp"
 Converted["_BallTp"].Parent = Converted["_ScrollingFrame"]
 
-Converted["_onoroff2"].BackgroundColor3 = Color3.fromRGB(117.00000062584877, 255, 140.00000685453415)
+Converted["_onoroff2"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
 Converted["_onoroff2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_onoroff2"].BorderSizePixel = 0
 Converted["_onoroff2"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
@@ -255,7 +256,7 @@ Converted["_ClickTp"].Size = UDim2.new(0, 578, 0, 50)
 Converted["_ClickTp"].Name = "ClickTp"
 Converted["_ClickTp"].Parent = Converted["_ScrollingFrame"]
 
-Converted["_onoroff3"].BackgroundColor3 = Color3.fromRGB(117.00000062584877, 255, 140.00000685453415)
+Converted["_onoroff3"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
 Converted["_onoroff3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_onoroff3"].BorderSizePixel = 0
 Converted["_onoroff3"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
@@ -285,7 +286,7 @@ Converted["_SpinBot"].Size = UDim2.new(0, 578, 0, 50)
 Converted["_SpinBot"].Name = "SpinBot"
 Converted["_SpinBot"].Parent = Converted["_ScrollingFrame"]
 
-Converted["_onoroff4"].BackgroundColor3 = Color3.fromRGB(117.00000062584877, 255, 140.00000685453415)
+Converted["_onoroff4"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
 Converted["_onoroff4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_onoroff4"].BorderSizePixel = 0
 Converted["_onoroff4"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
@@ -319,7 +320,7 @@ Converted["_Phase"].Size = UDim2.new(0, 578, 0, 50)
 Converted["_Phase"].Name = "Phase"
 Converted["_Phase"].Parent = Converted["_ScrollingFrame"]
 
-Converted["_onoroff5"].BackgroundColor3 = Color3.fromRGB(117.00000062584877, 255, 140.00000685453415)
+Converted["_onoroff5"].BackgroundColor3 = Color3.fromRGB(105.00000134110451, 170.0000050663948, 255)
 Converted["_onoroff5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_onoroff5"].BorderSizePixel = 0
 Converted["_onoroff5"].Position = UDim2.new(0.930795848, 0, 0.200000003, 0)
@@ -418,7 +419,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function SOFOMAV_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
+local function MZJPCDD_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextButton"]
@@ -435,7 +436,7 @@ local function SOFOMAV_fake_script() -- Fake Script: StarterGui.main.open.TextBu
 		script.Parent.Parent.Parent.guis.Enabled = true
 	end)
 end
-local function WVCJH_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
+local function KQQDFSW_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close"]
@@ -453,7 +454,7 @@ local function WVCJH_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 		script.Parent.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function MJBTIJC_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AlwaysGreen.LocalScript
+local function DBJVZH_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AlwaysGreen.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AlwaysGreen"]
@@ -503,7 +504,7 @@ local function MJBTIJC_fake_script() -- Fake Script: StarterGui.main.guis.basket
 	-- Connect the key press event
 	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 end
-local function OZRT_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AutoBlock.LocalScript
+local function YVQTZFX_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AutoBlock.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AutoBlock"]
@@ -521,7 +522,7 @@ local function OZRT_fake_script() -- Fake Script: StarterGui.main.guis.basketbal
 	local on = false
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if on == false then
+		if not on then
 			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
 			on = true
 		else
@@ -652,9 +653,14 @@ local function OZRT_fake_script() -- Fake Script: StarterGui.main.guis.basketbal
 		end
 	end)
 	
+	-- Handle character respawn
+	LocalPlayer.CharacterAdded:Connect(function(character)
+		Character = character
+		HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+	end)
 	
 end
-local function YDOT_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.BallTp.LocalScript
+local function NPZZP_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.BallTp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_BallTp"]
@@ -753,7 +759,7 @@ local function YDOT_fake_script() -- Fake Script: StarterGui.main.guis.basketbal
 	end)
 	
 end
-local function JKMZJFE_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.ClickTp.LocalScript
+local function TOIS_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.ClickTp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ClickTp"]
@@ -810,7 +816,7 @@ local function JKMZJFE_fake_script() -- Fake Script: StarterGui.main.guis.basket
 	end)
 	
 end
-local function FXODW_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.SpinBot.LocalScript
+local function EDWT_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.SpinBot.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SpinBot"]
@@ -823,40 +829,46 @@ local function FXODW_fake_script() -- Fake Script: StarterGui.main.guis.basketba
         return req(obj)
     end
 
-	script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+	local button = script.Parent
+	button.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
 	
 	local on = false
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		if on == false then
-			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
-			on = true
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local function spinCharacter()
+		while on do
+			local rotationAngle = math.random(1, 360)
+			character:SetPrimaryPartCFrame(character.PrimaryPart.CFrame * CFrame.Angles(0, math.rad(rotationAngle), 0))
+			wait(0.01)
+		end
+	end
+	
+	-- Continuously spin the character when the button is toggled
+	button.MouseButton1Click:Connect(function()
+		on = not on
+		if on then
+			button.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
+			spawn(spinCharacter)  -- Spawn the function to run it asynchronously
 		else
-			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
-			on = false
+			button.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
 		end
 	end)
 	
-	local player = game.Players.LocalPlayer -- Get the local player
-	local character = player.Character or player.CharacterAdded:Wait() -- Get the player's character or wait for it to be added
-	local humanoid = character:WaitForChild("Humanoid") -- Get the humanoid part of the character
-	
-	local function spinCharacter()
-		while on == true do -- Run indefinitely
-			local rotationAngle = math.random(1, 360) -- Generate a random rotation angle between 1 and 360 degrees
-			-- Rotate the character around its primary part (usually the torso) by the generated angle
-			character:SetPrimaryPartCFrame(character.PrimaryPart.CFrame * CFrame.Angles(0, math.rad(rotationAngle), 0))
-			wait(0.01) -- Wait for a short time to control the speed of spinning
+	-- Handle character respawn
+	player.CharacterAdded:Connect(function(newCharacter)
+		character = newCharacter
+		humanoid = character:WaitForChild("Humanoid")
+		if on then
+			button.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
+			spawn(spinCharacter)  -- Spawn the function to run it asynchronously
 		end
-	end
-	
-	while true do
-		spinCharacter() -- Call the function to start spinning the character
-		wait(1)
-	end
+	end)
 	
 end
-local function JROWY_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Phase.LocalScript
+local function RLNKPDG_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Phase.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Phase"]
@@ -869,51 +881,52 @@ local function JROWY_fake_script() -- Fake Script: StarterGui.main.guis.basketba
         return req(obj)
     end
 
-	script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
-	
+	local button = script.Parent
+	local onoroff = button:FindFirstChild("onoroff")
 	local on = false
 	
-	script.Parent.MouseButton1Click:Connect(function()
+	button.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
+	
+	button.MouseButton1Click:Connect(function()
 		if on == false then
-			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
-			on = true
+			onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
 		else
-			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
-			on = false
+			onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
 		end
+		on = not on  -- Toggle the on state
 	end)
 	
-	local savedPosition = nil
 	local player = game.Players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
 	local userInputService = game:GetService("UserInputService")
 	
-	-- Function to handle key press
 	local function onKeyPress(input, gameProcessedEvent)
-		if gameProcessedEvent then return end
-		if input.KeyCode == Enum.KeyCode.J and on == true then
+		local character = player.Character
+		if not character or gameProcessedEvent then
+			return
+		end
+	
+		if input.KeyCode == Enum.KeyCode.J then
+			local savedPosition = character:FindFirstChild("SavedPosition")
 			if savedPosition then
-				-- Teleport the player to the saved position
-				character:SetPrimaryPartCFrame(CFrame.new(savedPosition))
-				-- Reset the saved position
-				savedPosition = nil
+				character:SetPrimaryPartCFrame(CFrame.new(savedPosition.Value))
+				savedPosition:Destroy()
 			else
-				-- Save the current position
-				savedPosition = character.PrimaryPart.Position
+				local savedPositionValue = Instance.new("Vector3Value")
+				savedPositionValue.Name = "SavedPosition"
+				savedPositionValue.Value = character.PrimaryPart.Position
+				savedPositionValue.Parent = character
 			end
 		end
 	end
 	
-	-- Connect the function to InputBegan event
 	userInputService.InputBegan:Connect(onKeyPress)
 	
-	-- Ensure character.PrimaryPart is set
-	if not character.PrimaryPart then
-		character:GetPropertyChangedSignal("PrimaryPart"):Wait()
-	end
+	player.CharacterAdded:Connect(function(character)
+		userInputService.InputBegan:Connect(onKeyPress)
+	end)
 	
 end
-local function IFDCSS_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
+local function WOINYJN_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close1"]
@@ -930,7 +943,7 @@ local function IFDCSS_fake_script() -- Fake Script: StarterGui.main.guis.MainFra
 		script.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function EZGL_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
+local function JQYK_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Basket Ball Legends"]
@@ -949,13 +962,13 @@ local function EZGL_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame
 	
 end
 
-coroutine.wrap(SOFOMAV_fake_script)()
-coroutine.wrap(WVCJH_fake_script)()
-coroutine.wrap(MJBTIJC_fake_script)()
-coroutine.wrap(OZRT_fake_script)()
-coroutine.wrap(YDOT_fake_script)()
-coroutine.wrap(JKMZJFE_fake_script)()
-coroutine.wrap(FXODW_fake_script)()
-coroutine.wrap(JROWY_fake_script)()
-coroutine.wrap(IFDCSS_fake_script)()
-coroutine.wrap(EZGL_fake_script)()
+coroutine.wrap(MZJPCDD_fake_script)()
+coroutine.wrap(KQQDFSW_fake_script)()
+coroutine.wrap(DBJVZH_fake_script)()
+coroutine.wrap(YVQTZFX_fake_script)()
+coroutine.wrap(NPZZP_fake_script)()
+coroutine.wrap(TOIS_fake_script)()
+coroutine.wrap(EDWT_fake_script)()
+coroutine.wrap(RLNKPDG_fake_script)()
+coroutine.wrap(WOINYJN_fake_script)()
+coroutine.wrap(JQYK_fake_script)()
