@@ -721,7 +721,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function MCEL_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
+local function ARQP_fake_script() -- Fake Script: StarterGui.main.open.TextButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextButton"]
@@ -738,7 +738,7 @@ local function MCEL_fake_script() -- Fake Script: StarterGui.main.open.TextButto
 		script.Parent.Parent.Parent.guis.Enabled = true
 	end)
 end
-local function TZURP_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
+local function CITSI_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close"]
@@ -757,7 +757,7 @@ local function TZURP_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 		script.Parent.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function DGCXXZ_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AlwaysGreen.LocalScript
+local function GIOM_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AlwaysGreen.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AlwaysGreen"]
@@ -807,7 +807,7 @@ local function DGCXXZ_fake_script() -- Fake Script: StarterGui.main.guis.basketb
 	-- Connect the key press event
 	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 end
-local function WKUNHM_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AutoBlock.LocalScript
+local function OHCVV_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.AutoBlock.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AutoBlock"]
@@ -963,7 +963,7 @@ local function WKUNHM_fake_script() -- Fake Script: StarterGui.main.guis.basketb
 	end)
 	
 end
-local function DLMHC_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.BallTp.LocalScript
+local function PWHY_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.BallTp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_BallTp"]
@@ -1062,7 +1062,7 @@ local function DLMHC_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 	end)
 	
 end
-local function GJFZW_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.ClickTp.LocalScript
+local function LGQCAB_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.ClickTp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ClickTp"]
@@ -1119,7 +1119,7 @@ local function GJFZW_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 	end)
 	
 end
-local function AITSY_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.SpinBot.LocalScript
+local function ARWNTQZ_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.SpinBot.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_SpinBot"]
@@ -1171,7 +1171,7 @@ local function AITSY_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 	end)
 	
 end
-local function XBTLXQ_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Phase.LocalScript
+local function BYNMC_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Phase.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Phase"]
@@ -1229,7 +1229,7 @@ local function XBTLXQ_fake_script() -- Fake Script: StarterGui.main.guis.basketb
 	end)
 	
 end
-local function MKYAR_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Fov.LocalScript
+local function WCMMX_fake_script() -- Fake Script: StarterGui.main.guis.basketballlegends.MainFrame.ScrollingFrame.Fov.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Fov"]
@@ -1242,9 +1242,6 @@ local function MKYAR_fake_script() -- Fake Script: StarterGui.main.guis.basketba
         return req(obj)
     end
 
-	script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
-	
-	
 	-- Function to change the FOV
 	local function changeFOV(newFOV)
 		local player = game.Players.LocalPlayer
@@ -1254,21 +1251,10 @@ local function MKYAR_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 		end
 	end
 	
-	-- Connecting the button click event
-	script.Parent.MouseButton1Click:Connect(function()
-		local fovText = script.Parent.Fov.Text
-		local newFOV = tonumber(fovText)  -- Convert the text to a number
-		if newFOV then
-			changeFOV(newFOV)
-		else
-			warn("Invalid FOV value: " .. fovText)  -- Warn if the input is not a valid number
-		end
-	end)
-	
-	
 	local on = false
 	
-	script.Parent.MouseButton1Click:Connect(function()
+	-- Function to toggle the button state
+	local function toggleButton()
 		if on == false then
 			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
 			on = true
@@ -1276,10 +1262,27 @@ local function MKYAR_fake_script() -- Fake Script: StarterGui.main.guis.basketba
 			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
 			on = false
 		end
-	end)
+	end
+	
+	-- Function to handle FOV change based on user input
+	local function handleFOVChange()
+		local fovText = script.Parent.Fov.Text
+		local newFOV = tonumber(fovText)  -- Convert the text to a number
+		if newFOV then
+			changeFOV(newFOV)
+		else
+			warn("Invalid FOV value: " .. fovText)  -- Warn if the input is not a valid number
+		end
+	end
+	
+	-- Connecting the button click event to toggleButton function
+	script.Parent.MouseButton1Click:Connect(toggleButton)
+	
+	-- Connecting the text box change event to handleFOVChange function
+	script.Parent.Fov.Changed:Connect(handleFOVChange)
 	
 end
-local function HABLGF_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
+local function TXTFRNW_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close1"]
@@ -1296,7 +1299,7 @@ local function HABLGF_fake_script() -- Fake Script: StarterGui.main.guis.MainFra
 		script.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function PDCCEZW_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
+local function AZZBK_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Basket Ball Legends.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Basket Ball Legends"]
@@ -1314,7 +1317,7 @@ local function PDCCEZW_fake_script() -- Fake Script: StarterGui.main.guis.MainFr
 	end)
 	
 end
-local function SHPXAM_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Global.LocalScript
+local function CRLS_fake_script() -- Fake Script: StarterGui.main.guis.MainFrame.Games.Global.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Global"]
@@ -1332,7 +1335,7 @@ local function SHPXAM_fake_script() -- Fake Script: StarterGui.main.guis.MainFra
 	end)
 	
 end
-local function CHGHNPZ_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.Close.LocalScript
+local function UUVQTB_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close2"]
@@ -1351,7 +1354,7 @@ local function CHGHNPZ_fake_script() -- Fake Script: StarterGui.main.guis.Global
 		script.Parent.Parent.Parent.Parent.Enabled = false
 	end)
 end
-local function FILASAS_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.InfiniteYeild.LocalScript
+local function PLYQSN_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.InfiniteYeild.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_InfiniteYeild"]
@@ -1368,7 +1371,7 @@ local function FILASAS_fake_script() -- Fake Script: StarterGui.main.guis.Global
 		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
 	end)
 end
-local function SLUYQ_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.Fov.LocalScript
+local function EDIHWLI_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.Fov.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Fov2"]
@@ -1381,9 +1384,6 @@ local function SLUYQ_fake_script() -- Fake Script: StarterGui.main.guis.Global.M
         return req(obj)
     end
 
-	script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
-	
-	
 	-- Function to change the FOV
 	local function changeFOV(newFOV)
 		local player = game.Players.LocalPlayer
@@ -1393,21 +1393,10 @@ local function SLUYQ_fake_script() -- Fake Script: StarterGui.main.guis.Global.M
 		end
 	end
 	
-	-- Connecting the button click event
-	script.Parent.MouseButton1Click:Connect(function()
-		local fovText = script.Parent.Fov.Text
-		local newFOV = tonumber(fovText)  -- Convert the text to a number
-		if newFOV then
-			changeFOV(newFOV)
-		else
-			warn("Invalid FOV value: " .. fovText)  -- Warn if the input is not a valid number
-		end
-	end)
-	
-	
 	local on = false
 	
-	script.Parent.MouseButton1Click:Connect(function()
+	-- Function to toggle the button state
+	local function toggleButton()
 		if on == false then
 			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(117, 255, 140)
 			on = true
@@ -1415,10 +1404,27 @@ local function SLUYQ_fake_script() -- Fake Script: StarterGui.main.guis.Global.M
 			script.Parent.onoroff.BackgroundColor3 = Color3.fromRGB(255, 87, 90)
 			on = false
 		end
-	end)
+	end
+	
+	-- Function to handle FOV change based on user input
+	local function handleFOVChange()
+		local fovText = script.Parent.Fov.Text
+		local newFOV = tonumber(fovText)  -- Convert the text to a number
+		if newFOV then
+			changeFOV(newFOV)
+		else
+			warn("Invalid FOV value: " .. fovText)  -- Warn if the input is not a valid number
+		end
+	end
+	
+	-- Connecting the button click event to toggleButton function
+	script.Parent.MouseButton1Click:Connect(toggleButton)
+	
+	-- Connecting the text box change event to handleFOVChange function
+	script.Parent.Fov.Changed:Connect(handleFOVChange)
 	
 end
-local function ILNV_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.ClickTp.LocalScript
+local function ODTDS_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.ClickTp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ClickTp1"]
@@ -1475,7 +1481,7 @@ local function ILNV_fake_script() -- Fake Script: StarterGui.main.guis.Global.Ma
 	end)
 	
 end
-local function DDTXIVD_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.Esp.LocalScript
+local function TMLXGK_fake_script() -- Fake Script: StarterGui.main.guis.Global.MainFrame.ScrollingFrame.Esp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Esp"]
@@ -1493,20 +1499,20 @@ local function DDTXIVD_fake_script() -- Fake Script: StarterGui.main.guis.Global
 	end)
 end
 
-coroutine.wrap(MCEL_fake_script)()
-coroutine.wrap(TZURP_fake_script)()
-coroutine.wrap(DGCXXZ_fake_script)()
-coroutine.wrap(WKUNHM_fake_script)()
-coroutine.wrap(DLMHC_fake_script)()
-coroutine.wrap(GJFZW_fake_script)()
-coroutine.wrap(AITSY_fake_script)()
-coroutine.wrap(XBTLXQ_fake_script)()
-coroutine.wrap(MKYAR_fake_script)()
-coroutine.wrap(HABLGF_fake_script)()
-coroutine.wrap(PDCCEZW_fake_script)()
-coroutine.wrap(SHPXAM_fake_script)()
-coroutine.wrap(CHGHNPZ_fake_script)()
-coroutine.wrap(FILASAS_fake_script)()
-coroutine.wrap(SLUYQ_fake_script)()
-coroutine.wrap(ILNV_fake_script)()
-coroutine.wrap(DDTXIVD_fake_script)()
+coroutine.wrap(ARQP_fake_script)()
+coroutine.wrap(CITSI_fake_script)()
+coroutine.wrap(GIOM_fake_script)()
+coroutine.wrap(OHCVV_fake_script)()
+coroutine.wrap(PWHY_fake_script)()
+coroutine.wrap(LGQCAB_fake_script)()
+coroutine.wrap(ARWNTQZ_fake_script)()
+coroutine.wrap(BYNMC_fake_script)()
+coroutine.wrap(WCMMX_fake_script)()
+coroutine.wrap(TXTFRNW_fake_script)()
+coroutine.wrap(AZZBK_fake_script)()
+coroutine.wrap(CRLS_fake_script)()
+coroutine.wrap(UUVQTB_fake_script)()
+coroutine.wrap(PLYQSN_fake_script)()
+coroutine.wrap(EDIHWLI_fake_script)()
+coroutine.wrap(ODTDS_fake_script)()
+coroutine.wrap(TMLXGK_fake_script)()
